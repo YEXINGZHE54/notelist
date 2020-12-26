@@ -13,6 +13,8 @@
 		E6584B13259728C400041165 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6584B12259728C400041165 /* Preview Assets.xcassets */; };
 		E6584B15259728C400041165 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6584B14259728C400041165 /* Persistence.swift */; };
 		E6584B18259728C400041165 /* NoteList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6584B16259728C400041165 /* NoteList.xcdatamodeld */; };
+		E6584B22259754BC00041165 /* Clipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6584B21259754BC00041165 /* Clipboard.swift */; };
+		E6584B2625975A6700041165 /* NoteListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6584B2525975A6700041165 /* NoteListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		E6584B17259728C400041165 /* NoteList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteList.xcdatamodel; sourceTree = "<group>"; };
 		E6584B19259728C400041165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6584B1A259728C400041165 /* NoteList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoteList.entitlements; sourceTree = "<group>"; };
+		E6584B21259754BC00041165 /* Clipboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clipboard.swift; sourceTree = "<group>"; };
+		E6584B2525975A6700041165 /* NoteListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,13 +61,15 @@
 		E6584B0A259728C100041165 /* NoteList */ = {
 			isa = PBXGroup;
 			children = (
-				E6584B0B259728C100041165 /* NoteListApp.swift */,
-				E6584B0D259728C100041165 /* ContentView.swift */,
-				E6584B0F259728C400041165 /* Assets.xcassets */,
 				E6584B14259728C400041165 /* Persistence.swift */,
-				E6584B19259728C400041165 /* Info.plist */,
-				E6584B1A259728C400041165 /* NoteList.entitlements */,
 				E6584B16259728C400041165 /* NoteList.xcdatamodeld */,
+				E6584B0D259728C100041165 /* ContentView.swift */,
+				E6584B1A259728C400041165 /* NoteList.entitlements */,
+				E6584B2525975A6700041165 /* NoteListModel.swift */,
+				E6584B19259728C400041165 /* Info.plist */,
+				E6584B2A25975E5300041165 /* util */,
+				E6584B0B259728C100041165 /* NoteListApp.swift */,
+				E6584B0F259728C400041165 /* Assets.xcassets */,
 				E6584B11259728C400041165 /* Preview Content */,
 			);
 			path = NoteList;
@@ -75,6 +81,14 @@
 				E6584B12259728C400041165 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6584B2A25975E5300041165 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				E6584B21259754BC00041165 /* Clipboard.swift */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6584B15259728C400041165 /* Persistence.swift in Sources */,
+				E6584B2625975A6700041165 /* NoteListModel.swift in Sources */,
 				E6584B0E259728C100041165 /* ContentView.swift in Sources */,
+				E6584B22259754BC00041165 /* Clipboard.swift in Sources */,
 				E6584B0C259728C100041165 /* NoteListApp.swift in Sources */,
 				E6584B18259728C400041165 /* NoteList.xcdatamodeld in Sources */,
 			);
